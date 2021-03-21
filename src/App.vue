@@ -21,12 +21,20 @@ export default {
     }
   },
   created() {
-    this.tasks = [{
+    this.tasks = [
+      {
       id: 1,
       text: "Doctors appointment",
       day: "March 1st at 2:30pm",
       reminder: true,
-    }]
+    },
+    {
+      id: 2,
+      text: "Doctors appointment",
+      day: "March 31st at 5:30pm",
+      reminder: true,
+    }
+    ]
   }
 };
 </script>
