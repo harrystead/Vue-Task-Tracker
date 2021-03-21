@@ -1,29 +1,45 @@
 <template>
-<div class="container">
- <Header title="Task Tracker"/>
-</div>
+  <div class="container">
+    <Header title="Task Tracker" />
+    <Tasks :tasks="tasks"/>
+  </div>
 </template>
 
 <script>
-import Header from './components/Header'
+import Header from "./components/Header";
+import Tasks from "./components/Tasks";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
+    Tasks,
+  },
+  data() {
+    return {
+      tasks: [],
+    }
+  },
+  created() {
+    this.tasks = [{
+      id: 1,
+      text: "Doctors appointment",
+      day: "March 1st at 2:30pm",
+      reminder: true,
+    }]
   }
-}
+};
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .container {
   max-width: 500px;
