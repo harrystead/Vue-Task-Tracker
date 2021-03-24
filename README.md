@@ -1,24 +1,5 @@
-# vue-task-tracker
+### Vue Task Tracker
 
-## Project setup
-```
-npm install
-```
+An app that allows users to add, edit and delete tasks using a form.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![image](https://user-images.githubusercontent.com/69797257/112307639-1aa77880-8c99-11eb-8318-a824c0247dd8.png)
